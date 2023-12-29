@@ -21,9 +21,26 @@
         </div>
       </div>
   </div>
-  <dialog>
+  <dialog open>
       <form method="dialog" name="add-book">
-
+        <label>
+          Title:
+          <input type="text" required>
+        </label>
+        <label>
+          Author:
+          <input type="text">
+        </label>
+        <label>
+          Published:
+          <input type="number" min="0" max="2050" step="1" placeholder="2000">
+        </label>
+        <label>
+          Read?
+          <input type="checkbox">
+        </label>
+        <button type="submit">Add</button>
+        <button type="button">Close</button>
       </form>
   </dialog>
 </body>
