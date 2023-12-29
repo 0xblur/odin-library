@@ -15,6 +15,14 @@ header {
   padding: 50px;
 }
 
+display {
+  border: 1px solid black;
+}
+
+label {
+  display: block;
+}
+
 button#add {
   min-height: 50px;
   min-width: 100px;
