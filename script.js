@@ -71,6 +71,16 @@ function displayBooks() {
       displayBooks()
     })
   })
+
+  // Delete book
+  const deleteBookBtns = document.querySelectorAll("button.delete-book");
+  deleteBookBtns.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      const id = Number(e.target.classList[1].split("-")[1])
+      myLibrary.splice(id, 1)
+      displayBooks();
+    })
+  })
 }
 
 // Event Listeners
