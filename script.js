@@ -61,6 +61,16 @@ function displayBooks() {
 
     library.appendChild(card)
   });
+
+  // Toggle read/unread status.
+  const toggleReadBtns = document.querySelectorAll("button.toggle-read")
+  toggleReadBtns.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      const id = Number(e.target.classList[1].split("-")[1])
+      myLibrary[id].toggleRead()
+      displayBooks()
+    })
+  })
 }
 
 // Event Listeners
