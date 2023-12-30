@@ -90,4 +90,7 @@ openDialogBtn.addEventListener("click", () => dialog.showModal())
 
 // Close Dialog
 const closeDialogBtn = document.querySelector("button#close-dialog")
-closeDialogBtn.addEventListener("click", () => dialog.close())
+closeDialogBtn.addEventListener("click", (e) => {
+  e.preventDefault()
+  dialog.close()
+});
