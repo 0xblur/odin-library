@@ -1,8 +1,6 @@
 const dialog = document.querySelector("dialog");
-const myLibrary = [
-  { name: "name1", author: "author1", date: 1900, read: true },
-  { name: "name2", author: "author2", date: 1950, read: false },
-];
+const form = document.querySelector("form");
+const myLibrary = [];
 
 class Book {
 
