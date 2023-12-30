@@ -4,13 +4,15 @@ const myLibrary = [
   { name: "name2", author: "author2", date: 1950, read: false },
 ];
 
-function Book(name, author, date, read) {
+class Book {
 
   //Constructor
-  self.name = name;
-  self.author = author;
-  self.date = date;
-  self.read = read;
+  constructor(title, author = "", date = "", read = false) {
+    this.title = title;
+    this.author = author;
+    this.date = date;
+    this.read = read;
+  }
 
 };
 
