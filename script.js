@@ -22,6 +22,7 @@ Book.prototype.toggleRead = function() {
   }
 };
 
+// Functions
 function addBookToLibrary() {
   const newBook = new Book;
   const form = document.querySelector("form")
@@ -29,9 +30,10 @@ function addBookToLibrary() {
   newBook.author = form.author.value;
   newBook.date = form.date.value;
   newBook.read = form.read.checked;
-  myLibrary.push(newBook)
+  //TODO: Add form validation
 
-}
+  myLibrary.push(newBook)
+};
 
 
 function displayBooks() {
