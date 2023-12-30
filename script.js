@@ -72,3 +72,12 @@ function displayBooks() {
     library.appendChild(card)
   });
 }
+
+// Event Listeners
+// Open Dialog
+const openDialogBtn = document.getElementById("open-dialog")
+openDialogBtn.addEventListener("click", () => dialog.showModal())
+
+// Close Dialog
+const closeDialogBtn = document.querySelector("button#close-dialog")
+closeDialogBtn.addEventListener("click", () => dialog.close())
