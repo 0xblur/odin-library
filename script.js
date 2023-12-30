@@ -14,14 +14,12 @@ class Book {
   }
 };
 
-  toggleRead() {
-    if (this.read) {
-      this.read = false;
-    } else {
-      this.read = true;
-    }
+Book.prototype.toggleRead = function() {
+  if (this.read) {
+    this.read = false;
+  } else {
+    this.read = true;
   }
-
 };
 
 function addBookToLibrary() {
