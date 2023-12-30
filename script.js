@@ -25,6 +25,13 @@ class Book {
 };
 
 function addBookToLibrary() {
+  const newBook = new Book;
+  const form = document.querySelector("form")
+  newBook.title = form.title.value;
+  newBook.author = form.author.value;
+  newBook.date = form.date.value;
+  newBook.read = form.read.checked;
+  myLibrary.push(newBook)
 
 }
 
