@@ -43,8 +43,6 @@ function displayBooks() {
 
     const card = document.createElement("div")
     card.classList.add("book-card")
-    const cover = document.createElement("div")
-    cover.classList.add("book-cover-box")
 
     card.innerHTML = `<h2>${book.name}</h2>
     <div class="book-detail-box">
