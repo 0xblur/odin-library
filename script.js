@@ -38,7 +38,8 @@ function addBookToLibrary() {
 
 function displayBooks() {
   const library = document.querySelector("#library")
-  myLibrary.forEach((book) => {
+  library.innerHTML = "";
+  myLibrary.forEach((book, i) => {
 
     const card = document.createElement("div")
     card.classList.add("book-card")
