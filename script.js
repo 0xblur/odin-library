@@ -14,6 +14,14 @@ class Book {
     this.read = read;
   }
 
+  toggleRead() {
+    if (this.read) {
+      this.read = false;
+    } else {
+      this.read = true;
+    }
+  }
+
 };
 
 function addBookToLibrary() {
