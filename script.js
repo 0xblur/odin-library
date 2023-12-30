@@ -1,27 +1,8 @@
-// Books to fill the library with just for visualization
-const book1 = {
-  name: "name1",
-  author: "author1",
-  date: 1900,
-  read: true,
-};
-
-const book2 = {
-  name: "name2",
-  author: "author2",
-  date: 1950,
-  read: true,
-};
-
-const book3 = {
-  name: "name3",
-  author: "author3",
-  date: 2010,
-  read: false,
-};
-
-
-const myLibrary = [book1, book2, book3];
+const dialog = document.querySelector("dialog");
+const myLibrary = [
+  { name: "name1", author: "author1", date: 1900, read: true },
+  { name: "name2", author: "author2", date: 1950, read: false },
+];
 
 function Book(name, author, date, read) {
 
