@@ -94,3 +94,14 @@ closeDialogBtn.addEventListener("click", (e) => {
   e.preventDefault()
   dialog.close()
 });
+
+// Add book button.
+//TODO: Add keyboard shortcuts.
+const addBookBtn = document.querySelector("button#add-book");
+addBookBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  addBookToLibrary();
+  form.reset();
+  dialog.close();
+  displayBooks();
+});
