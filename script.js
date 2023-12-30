@@ -43,30 +43,17 @@ function displayBooks() {
 
     const card = document.createElement("div")
     card.classList.add("book-card")
-
-    card.innerHTML = `<h2>${book.name}</h2>
+    card.innerHTML = `
+    <h2>${book.title}</h2>
     <div class="book-detail-box">
       <ul>
-        <li>Author: ${book.author}</li>
+        <li hidden>ID: ${i}</li>
+        <li>Author: ${book.author}</li
         <li>Published: ${book.date}</li>
         <li>${book.read ? "Read" : "Not Read Yet"}</li>
       </ul>
     </div>
     <div class="book-button-box">
-      <button class="mark-read">Read</button>
-      <button class="delete-book">Delete</button>
-    </div>`
-    const detail = document.createElement("div")
-    detail.classList.add("book-detail-box")
-    // let ul = document.createElement("ul")
-    // let li = document.createElement("li")
-
-    const buttons = document.createElement("div")
-    buttons.classList.add("book-button-box")
-    const markReadBtn = document.createElement("button")
-    markReadBtn.classList.add("mark-read")
-    const deleteBookBtn = document.createElement("button")
-    deleteBookBtn.classList.add("delete-book")
 
     library.appendChild(card)
   });
