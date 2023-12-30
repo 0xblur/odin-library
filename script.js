@@ -54,6 +54,10 @@ function displayBooks() {
       </ul>
     </div>
     <div class="book-button-box">
+      <button class="toggle-read book-${i}">${book.read ? "Read" : "Not Read Yet"}</button>
+      <button class="delete-book book-${i}">Delete</button>
+    </div>
+    `
 
     library.appendChild(card)
   });
