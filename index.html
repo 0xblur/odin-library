@@ -9,7 +9,8 @@
 </head>
 <body>
   <header>
-    <button id="add">Add</button>
+    <h1>Library Organizer</h1>
+    <button id="open-dialog">Add new book</button>
   </header>
   <div id="library">
       <div class="book-card">
@@ -21,26 +22,26 @@
         </div>
       </div>
   </div>
-  <dialog open>
+  <dialog>
       <form method="dialog" name="add-book">
         <label>
           Title:
-          <input type="text" required>
+          <input name="title" type="text" required>
         </label>
         <label>
           Author:
-          <input type="text">
+          <input name="author" type="text">
         </label>
         <label>
           Published:
-          <input type="number" min="0" max="2050" step="1" placeholder="2000">
+          <input name="date" type="number" min="0" max="2050" step="1" placeholder="2000">
         </label>
         <label>
           Read?
-          <input type="checkbox">
+          <input name="read" type="checkbox">
         </label>
-        <button type="submit">Add</button>
-        <button type="button">Close</button>
+        <button id="submit" type="submit">Add</button>
+        <button id="close-dialog">Close</button>
       </form>
   </dialog>
 </body>
