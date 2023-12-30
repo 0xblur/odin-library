@@ -2,6 +2,7 @@ const dialog = document.querySelector("dialog");
 const form = document.querySelector("form");
 const myLibrary = [];
 
+// Book object definition.
 class Book {
 
   //Constructor
@@ -11,6 +12,7 @@ class Book {
     this.date = date;
     this.read = read;
   }
+};
 
   toggleRead() {
     if (this.read) {
