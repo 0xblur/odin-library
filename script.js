@@ -92,13 +92,22 @@ closeDialogBtn.addEventListener("click", (e) => {
 	dialog.close();
 });
 
-// Add Book Btn
-//TODO: Add keyboard shortcuts.
-const addBookBtn = document.querySelector("button#add-book");
-addBookBtn.addEventListener("click", (e) => {
-	e.preventDefault();
-	addBookToLibrary();
-	form.reset();
-	dialog.close();
-	displayBooks();
+// Form validation
+FORM.addEventListener("submit", (e) => {
+	if (FORM.checkValidity()) {
+		e.preventDefault();
+		console.log("Form is filled.");
+		addBookToLibrary();
+		displayBooks();
+
+		FORM.reset();
+		dialog.close();
+	} else {
+		console.log("Form is not fully filled.");
+		e.preventDefault();
+	}
 });
+
+//TODO: Add keyboard shortcuts.
+
+console.log("On form-validation branch");
