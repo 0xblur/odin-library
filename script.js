@@ -1,5 +1,5 @@
+const FORM = document.querySelector("form");
 const dialog = document.querySelector("dialog");
-const form = document.querySelector("form");
 const myLibrary = [];
 
 // Book object definition.
@@ -24,12 +24,10 @@ Book.prototype.toggleRead = function () {
 // Functions
 function addBookToLibrary() {
 	const newBook = new Book();
-	const form = document.querySelector("form");
-	newBook.title = form.title.value;
-	newBook.author = form.author.value;
-	newBook.date = form.date.value;
-	newBook.read = form.read.checked;
-	//TODO: Add form validation
+	newBook.title = FORM.title.value;
+	newBook.author = FORM.author.value;
+	newBook.date = FORM.date.value;
+	newBook.read = FORM.read.checked;
 
 	myLibrary.push(newBook);
 }
